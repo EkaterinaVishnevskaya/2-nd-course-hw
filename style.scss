@@ -11,6 +11,11 @@ $black: #202027;
     font-family: Montserrat;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 .header {
     position: relative;
     width: 100%;
@@ -29,7 +34,6 @@ $black: #202027;
         vertical-align: middle;
         width: 769px;
         padding-top: 196px;
-        margin-left: 120px;
     }
 
     &__subtitle {
@@ -39,7 +43,6 @@ $black: #202027;
         letter-spacing: 0px;
         vertical-align: middle;
         margin-top: 24px;
-        margin-left: 120px;
         width: 720px;
     }
 
@@ -51,7 +54,6 @@ $black: #202027;
     &__link {
         display: block;
         margin-top: 48px;
-        margin-left: 120px;
         width: 247px;
         height: 66px;
         border-radius: 60px;
@@ -77,6 +79,7 @@ $black: #202027;
     &__animated-line {
         position: absolute;
         top: 710px;
+        left: 0;
         height: 90px;
         width: 100%;
         overflow: hidden;
@@ -116,7 +119,6 @@ $black: #202027;
     padding-top: 94px;
 
     &__title {
-        margin-left: 119px;
         color: white;
         font-size: 64px;
         font-weight: 700;
@@ -127,7 +129,6 @@ $black: #202027;
 
     &__subtitle {
         margin-top: 24px;
-        margin-left: 119px;
         color: white;
         font-size: 24px;
         font-weight: 400;
@@ -137,21 +138,29 @@ $black: #202027;
     }
 
     &__wrapper {
-        margin-top: 72px;
-        padding-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: normal;
         gap: 32px;
-    }
 
-    &__card {
-        display: block;
-        background-color: white;
-        border-radius: 30px;
-        width: 378px;
+        &_top {
+            margin-top: 72px;
+            align-items: flex-start;
+        }
+
+        &_bottom {
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
     }
+}
+
+.card {
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    width: 378px;
+
 
     &__img {
         height: 314px;
@@ -194,7 +203,6 @@ $black: #202027;
     padding-bottom: 144px;
 
     &__title {
-        margin-left: 119px;
         color: white;
         font-size: 64px;
         font-weight: 700;
@@ -210,15 +218,15 @@ $black: #202027;
         align-items: center;
         gap: 32px;
     }
+}
 
-    &__card {
-        border-radius: 30px;
-        width: 1200px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 500px;
-        background-color: white;
-    }
+.playground-card {
+    border-radius: 30px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+    background-color: white;
 
     &__img {
         height: 100%;
@@ -270,6 +278,8 @@ $black: #202027;
         border: 1px solid black;
     }
 }
+
+
 
 .footer {
     height: 150px;

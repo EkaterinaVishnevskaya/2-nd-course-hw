@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header center">
         <h1 class="header__title">Добро пожаловать на мой сайт мини-игр</h1>
         <h2 class="header__subtitle">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                 class="header__subtitle header__subtitle_highlight">«Поехали!»</span> и <span
@@ -25,53 +25,55 @@
         <img src="img/Star 4.svg" alt="" id="star3">
         <img src="img/Star 5.svg" alt="" id="star4">
     </header>
-    <main class="main">
+    <main class="main center">
         <section class="games" id="games">
             <h2 class="games__title">Об играх</h2>
             <p class="games__subtitle">В моей коллекции представлено 6 игр на разные темы. <br>
                 Игры несложные — в них может поиграть каждый. <br>
                 Все игры доступны для пользования.</p>
-            <div class="games__wrapper">
-                <div class="games__card">
-                    <img class="games__img" src="img/Обложка карточки.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 1</p>
-                        <p class="games__text">Угадай число</p>
+            <div class="games__wrapper games__wrapper_top">
+                <div class="card">
+                    <img class="card__img" src="img/Обложка карточки.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 1</p>
+                        <p class="card__text">Угадай число</p>
                     </div>
                 </div>
-                <div class="games__card">
-                    <img class="games__img" src="img/Обложка карточки-2.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 2</p>
-                        <p class="games__text">Простая арифметика</p>
+                <div class="card">
+                    <img class="card__img" src="img/Обложка карточки-2.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 2</p>
+                        <p class="card__text">Простая арифметика</p>
                     </div>
                 </div>
-                <div class="games__card">
-                    <img class="games__img" src="img/Обложка карточки-4.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 3</p>
-                        <p class="games__text">Переверни текст</p>
+                <div class="card">
+                    <img class="card__img" src="img/Обложка карточки-4.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 3</p>
+                        <p class="card__text">Переверни текст</p>
                     </div>
                 </div>
-                <div class="games__card" href="#">
-                    <img class="games__img" src="img/Обложка карточки-1.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 4</p>
-                        <p class="games__text">Камень, ножницы, бумага</p>
+            </div>
+            <div class="games__wrapper games__wrapper_bottom">
+                <div class="card" href="#">
+                    <img class="card__img" src="img/Обложка карточки-1.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 4</p>
+                        <p class="card__text">Камень, ножницы, бумага</p>
                     </div>
                 </div>
-                <div class="games__card">
-                    <img class="games__img" src="img/Обложка карточки-3.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 5</p>
-                        <p class="games__text">Простая викторина</p>
+                <div class="card">
+                    <img class="card__img" src="img/Обложка карточки-3.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 5</p>
+                        <p class="card__text">Простая викторина</p>
                     </div>
                 </div>
-                <div class="games__card">
-                    <img class="games__img" src="img/Обложка карточки-5.svg"></img>
-                    <div class="games__info">
-                        <p class="games__number">Игра № 6</p>
-                        <p class="games__text">Генератор случайных цветов</p>
+                <div class="card">
+                    <img class="card__img" src="img/Обложка карточки-5.svg"></img>
+                    <div class="card__info">
+                        <p class="card__number">Игра № 6</p>
+                        <p class="card__text">Генератор случайных цветов</p>
                     </div>
                 </div>
             </div>
@@ -79,52 +81,53 @@
         <section class="playground">
             <h2 class="playground__title">Мини-игры</h2>
             <div class="playground__wrapper">
-                <div class="playground__card">
-                    <div class="playground__info">
-                        <p class="playground__name">Угадай число</p>
-                        <p class="playground__description">Попробуй угадать случайное число от 1 до 100.</p>
-                        <button class="playground__button">Играть!</button>
+                <div class="playground-card">
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Угадай число</p>
+                        <p class="playground-card__description">Попробуй угадать случайное число от 1 до 100.</p>
+                        <button class="playground-card__button">Играть!</button>
                     </div>
-                    <img class="playground__img" src="img/Обложка карточки.svg"></img>
+                    <img class="playground-card__img" src="img/Обложка карточки.svg"></img>
                 </div>
-                <div class="playground__card">
-                    <img class="playground__img" src="img/Обложка карточки-2.svg"></img>
-                    <div class="playground__info">
-                        <p class="playground__name">Простая арифметика</p>
-                        <p class="playground__description">Попробуй решить простые арифметические задачи.</p>
-                        <button class="playground__button">Играть!</button>
-                    </div>
-                </div>
-                <div class="playground__card">
-                    <div class="playground__info">
-                        <p class="playground__name">Переверни текст</p>
-                        <p class="playground__description">Попробуй ввести текст, который будет перевернут.</p>
-                        <button class="playground__button">Играть!</button>
-                    </div>
-                    <img class="playground__img" src="img/Обложка карточки-4.svg"></img>
-                </div>
-                <div class="playground__card">
-                    <img class="playground__img" src="img/Обложка карточки-1.svg"></img>
-                    <div class="playground__info">
-                        <p class="playground__name">Викторина</p>
-                        <p class="playground__description">Отвечай на вопросы викторины с вариантами ответов.</p>
-                        <button class="playground__button">Играть!</button>
+                <div class="playground-card">
+                    <img class="playground-card__img" src="img/Обложка карточки-2.svg"></img>
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Простая арифметика</p>
+                        <p class="playground-card__description">Попробуй решить простые арифметические задачи.</p>
+                        <button class="playground-card__button">Играть!</button>
                     </div>
                 </div>
-                <div class="playground__card">
-                    <div class="playground__info">
-                        <p class="playground__name">Камень, ножницы, бумага</p>
-                        <p class="playground__description">Сыграй в популярную игру против компьютера.</p>
-                        <button class="playground__button">Играть!</button>
+                <div class="playground-card">
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Переверни текст</p>
+                        <p class="playground-card__description">Попробуй ввести текст, который будет перевернут.</p>
+                        <button class="playground-card__button">Играть!</button>
                     </div>
-                    <img class="playground__img" src="img/Обложка карточки-3.svg"></img>
+                    <img class="playground-card__img" src="img/Обложка карточки-4.svg"></img>
                 </div>
-                <div class="playground__card">
-                    <img class="playground__img" src="img/Обложка карточки-5.svg"></img>
-                    <div class="playground__info">
-                        <p class="playground__name">Генератор случайных цветов</p>
-                        <p class="playground__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="playground__button">Играть!</button>
+                <div class="playground-card">
+                    <img class="playground-card__img" src="img/Обложка карточки-1.svg"></img>
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Викторина</p>
+                        <p class="playground-card__description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                        <button class="playground-card__button">Играть!</button>
+                    </div>
+                </div>
+                <div class="playground-card">
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Камень, ножницы, бумага</p>
+                        <p class="playground-card__description">Сыграй в популярную игру против компьютера.</p>
+                        <button class="playground-card__button">Играть!</button>
+                    </div>
+                    <img class="playground-card__img" src="img/Обложка карточки-3.svg"></img>
+                </div>
+                <div class="playground-card">
+                    <img class="playground-card__img" src="img/Обложка карточки-5.svg"></img>
+                    <div class="playground-card__info">
+                        <p class="playground-card__name">Генератор случайных цветов</p>
+                        <p class="playground-card__description">Игра, в которой при клике на кнопку фон страницы меняется
+                            на случайный.</p>
+                        <button class="playground-card__button">Играть!</button>
                     </div>
                 </div>
             </div>

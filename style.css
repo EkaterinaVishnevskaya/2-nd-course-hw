@@ -6,6 +6,11 @@
   font-family: Montserrat;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -24,7 +29,6 @@
   vertical-align: middle;
   width: 769px;
   padding-top: 196px;
-  margin-left: 120px;
 }
 .header__subtitle {
   font-weight: 400;
@@ -33,7 +37,6 @@
   letter-spacing: 0px;
   vertical-align: middle;
   margin-top: 24px;
-  margin-left: 120px;
   width: 720px;
 }
 .header__subtitle_highlight {
@@ -43,7 +46,6 @@
 .header__link {
   display: block;
   margin-top: 48px;
-  margin-left: 120px;
   width: 247px;
   height: 66px;
   border-radius: 60px;
@@ -67,6 +69,7 @@
 .header__animated-line {
   position: absolute;
   top: 710px;
+  left: 0;
   height: 90px;
   width: 100%;
   overflow: hidden;
@@ -106,7 +109,6 @@
   padding-top: 94px;
 }
 .games__title {
-  margin-left: 119px;
   color: white;
   font-size: 64px;
   font-weight: 700;
@@ -116,7 +118,6 @@
 }
 .games__subtitle {
   margin-top: 24px;
-  margin-left: 119px;
   color: white;
   font-size: 24px;
   font-weight: 400;
@@ -125,29 +126,35 @@
   text-align: left;
 }
 .games__wrapper {
-  margin-top: 72px;
-  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: normal;
   gap: 32px;
 }
-.games__card {
+.games__wrapper_top {
+  margin-top: 72px;
+  align-items: flex-start;
+}
+.games__wrapper_bottom {
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.card {
   display: block;
   background-color: white;
   border-radius: 30px;
   width: 378px;
 }
-.games__img {
+.card__img {
   height: 314px;
   border-radius: inherit;
 }
-.games__info {
+.card__info {
   padding: 32px;
   text-decoration: none;
 }
-.games__number {
+.card__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +168,7 @@
   line-height: 110%;
   letter-spacing: 0px;
 }
-.games__text {
+.card__text {
   text-decoration: none;
   margin-top: 16px;
   font-size: 32px;
@@ -175,7 +182,6 @@
   padding-bottom: 144px;
 }
 .playground__title {
-  margin-left: 119px;
   color: white;
   font-size: 64px;
   font-weight: 700;
@@ -190,7 +196,8 @@
   align-items: center;
   gap: 32px;
 }
-.playground__card {
+
+.playground-card {
   border-radius: 30px;
   width: 1200px;
   display: grid;
@@ -198,16 +205,16 @@
   height: 500px;
   background-color: white;
 }
-.playground__img {
+.playground-card__img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
 }
-.playground__info {
+.playground-card__info {
   margin: 32px;
 }
-.playground__name {
+.playground-card__name {
   margin-bottom: 24px;
   font-size: 48px;
   font-weight: 700;
@@ -215,7 +222,7 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.playground__description {
+.playground-card__description {
   margin-bottom: 36px;
   font-size: 24px;
   font-weight: 400;
@@ -224,7 +231,7 @@
   text-align: left;
   max-width: 500px;
 }
-.playground__button {
+.playground-card__button {
   width: 247px;
   height: 66px;
   border-radius: 60px;
@@ -238,7 +245,7 @@
   letter-spacing: 0%;
   text-align: center;
 }
-.playground__button:hover {
+.playground-card__button:hover {
   color: black;
   background-color: white;
   border: 1px solid black;
