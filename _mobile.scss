@@ -1,0 +1,82 @@
+@media (max-width: 767px) {
+    .header {
+        background-image: url(img/Vector.svg);
+        height: 700px;
+        background-position: top right;
+        background-size: 220px;
+
+        &__title {
+            margin: auto;
+            font-size: 40px;
+            text-align: center;
+            max-width: 262px;
+        }
+
+        &__subtitle {
+            margin: auto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            width: 296px;
+        }
+
+        &__subtitle_highlight {
+            font-weight: 600;
+        }
+
+        &__link {
+            margin: 36px auto;
+            width: 247px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    
+        &__link:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        &__animated-line {
+            top: 649px;
+            height: 51px;
+        }
+    }
+
+    #star1 {
+        top: 97px;
+        left: 37px;
+    }
+
+    #star2 {
+        top: 64px;
+        left: 91px;
+    }
+
+    #star3 {
+        bottom: 125px;
+        right: 86px;
+    }
+
+    #star4 {
+        bottom: 79px;
+        right: 34px;
+    }
+
+    .games {
+        display: none;
+    }
+
+    .playground-card {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer {
+        height: 100px;
+    }
+}

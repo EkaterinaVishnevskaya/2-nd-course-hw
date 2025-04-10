@@ -101,14 +101,14 @@ $black: #202027;
 
 #star3 {
     position: absolute;
-    top: 568px;
-    left: 1013px;
+    bottom: 149px;
+    right: 344px;
 }
 
 #star4 {
     position: absolute;
-    top: 538px;
-    left: 948px;
+    bottom: 222px;
+    right: 455px;
 }
 
 .main {
@@ -297,3 +297,7 @@ $black: #202027;
         text-align: center;
     }
 }
+
+
+@import 'tablet';
+@import 'mobile';
