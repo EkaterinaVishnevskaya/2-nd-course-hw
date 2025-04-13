@@ -28,18 +28,26 @@ alert(Number(a) + Number(b));
 let monthNumber = 12
 
 switch (monthNumber) {
-   case 1, 2, 12:
-      console.log('зима');
-      break;
-   case 3, 4, 5:
-      console.log('весна');
-      break;
-    case 6, 7, 8:
-      console.log('лето');
-      break;
-    case 9, 10, 11:
-      console.log('осень');
-      break;
+    case 1:
+    case 2:
+    case 12:
+        console.log('зима');
+        break;
+    case 3:
+    case 4: 
+    case 5:
+        console.log('весна');
+        break;
+    case 6: 
+    case 7:
+    case 8:
+        console.log('лето');
+        break;
+    case 9:
+    case 10: 
+    case 11:
+        console.log('осень');
+        break;
    default:
-      break;
+        break;
 }

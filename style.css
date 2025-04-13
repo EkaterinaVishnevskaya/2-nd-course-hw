@@ -145,6 +145,7 @@
   background-color: white;
   border-radius: 30px;
   width: 378px;
+  text-decoration: none;
 }
 .card__img {
   height: 314px;
@@ -212,7 +213,7 @@
   border-radius: 30px;
 }
 .playground-card__info {
-  margin: 32px;
+  margin: 48px;
 }
 .playground-card__name {
   margin-bottom: 24px;
