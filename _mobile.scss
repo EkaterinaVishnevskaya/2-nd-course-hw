@@ -13,7 +13,7 @@
         }
 
         &__subtitle {
-            margin: auto;
+            margin: 24px auto;
             font-size: 16px;
             font-weight: 400;
             line-height: 20px;
@@ -51,21 +51,25 @@
     #star1 {
         top: 97px;
         left: 37px;
+        scale: 50%;
     }
 
     #star2 {
         top: 64px;
         left: 91px;
+        scale: 50%;
     }
 
     #star3 {
         bottom: 125px;
         right: 86px;
+        scale: 50%;
     }
 
     #star4 {
         bottom: 79px;
         right: 34px;
+        scale: 50%;
     }
 
     .games {
