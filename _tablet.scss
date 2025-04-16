@@ -1,6 +1,14 @@
-@media (max-width: 1205) {
+@media (max-width: 1205px) {
     .center {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .playground {
+        width: 100%;
+    }
+
+    .games__wrapper {
+        row-gap: 10px;
     }
 }
