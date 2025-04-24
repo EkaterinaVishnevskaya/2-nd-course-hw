@@ -77,10 +77,12 @@
     }
 
     .playground-card {
-        grid-template-rows: repeat(2, 1fr);
+        flex-direction: column;
     }
 
     .footer {
         height: 100px;
     }
+
+    
 }
