@@ -11,9 +11,13 @@ $black: #202027;
     font-family: Montserrat;
 }
 
+html {
+    scroll-behavior: smooth;  
+}
+
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 601px);
+    padding-right: calc(50% - 601px);
 }
 
 .header {
@@ -140,7 +144,7 @@ $black: #202027;
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         column-gap: 32px;
         margin-top: 72px;
         padding-bottom: 50px;
@@ -154,8 +158,12 @@ $black: #202027;
     width: 378px;
     text-decoration: none;
 
+    &:hover {
+        width: 406px;
+    }
+
     &__img {
-        height: 314px;
+        width: 100%;
         border-radius: inherit;
     }
 
@@ -294,6 +302,22 @@ $black: #202027;
         line-height: 29px;
         letter-spacing: 0px;
         text-align: center;
+    }
+}
+
+button {
+    transition: all 0.5s;
+
+    &:hover {
+        transition: all 0.5s;
+    }
+}
+
+a {
+    transition: all 0.5s;
+
+    &:hover {
+        transition: all 0.5s;
     }
 }
 

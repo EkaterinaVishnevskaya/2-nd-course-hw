@@ -1,13 +1,18 @@
-@media (max-width: 1205px) {
+@media (max-width: 1232px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
     }
 
+    .games {
+        display: none;
+    }
+
     .playground-card {
         max-width: 100%;
         flex-direction: column;
-        
+        text-align: center;
+
         &__info {
             margin: 32px;
         }
@@ -17,6 +22,9 @@
             font-weight: 700;
             font-size: 32px;
             vertical-align: middle;
+            line-height: 39px;
+            text-align: left;
+            
         }
 
         &__description {
@@ -24,11 +32,10 @@
             font-weight: 400;
             font-size: 16px;
             vertical-align: middle;
-
+            line-height: 20px;
         }
 
         &__button {
-            width: 100%;
             font-size: 16px;
             font-weight: 600;
             line-height: 141.69%;
@@ -41,7 +48,7 @@
     }
 }
 
-@media (min-width: 767px) and (max-width: 1205px) {
+@media (min-width: 767px) and (max-width: 1232px) {
     .playground-card {
         max-width: 100%;
         height: 300;

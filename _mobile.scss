@@ -35,7 +35,7 @@
             letter-spacing: 0%;
             text-align: center;
         }
-    
+
         &__link:hover {
             color: black;
             background-color: white;
@@ -72,17 +72,24 @@
         scale: 50%;
     }
 
-    .games {
-        display: none;
+    .playground__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
     }
 
     .playground-card {
         flex-direction: column;
+
+        &__button {
+            width: 285px;
+            height: 55px;
+        }
     }
 
     .footer {
         height: 100px;
     }
 
-    
+
 }
