@@ -76,16 +76,16 @@
                 </a>
             </div>
         </section>
-        <section class="playground">
+        <section class="playground center">
             <h2 class="playground__title">Мини-игры</h2>
             <div class="playground__wrapper">
-                <div id="number" class="playground-card">
+                <div id="number" class="playground-card rev">
+                    <img class="playground-card__img" src="img/Обложка карточки.svg"></img>
                     <div class="playground-card__info">
                         <p class="playground-card__name">Угадай число</p>
                         <p class="playground-card__description">Попробуй угадать случайное число от 1 до 100.</p>
-                        <button class="playground-card__button">Играть!</button>
+                        <button class="playground-card__button" onclick="guessNumber()">Играть!</button>
                     </div>
-                    <img class="playground-card__img" src="img/Обложка карточки.svg"></img>
                 </div>
                 <div id="math" class="playground-card">
                     <img class="playground-card__img" src="img/Обложка карточки-2.svg"></img>
@@ -95,13 +95,13 @@
                         <button class="playground-card__button">Играть!</button>
                     </div>
                 </div>
-                <div id="backward" class="playground-card">
+                <div id="backward" class="playground-card rev">
+                    <img class="playground-card__img" src="img/Обложка карточки-4.svg"></img>
                     <div class="playground-card__info">
                         <p class="playground-card__name">Переверни текст</p>
                         <p class="playground-card__description">Попробуй ввести текст, который будет перевернут.</p>
                         <button class="playground-card__button">Играть!</button>
                     </div>
-                    <img class="playground-card__img" src="img/Обложка карточки-4.svg"></img>
                 </div>
                 <div id="rsp" class="playground-card">
                     <img class="playground-card__img" src="img/Обложка карточки-1.svg"></img>
@@ -111,19 +111,20 @@
                         <button class="playground-card__button">Играть!</button>
                     </div>
                 </div>
-                <div id="quiz" class="playground-card">
+                <div id="quiz" class="playground-card rev">
+                    <img class="playground-card__img" src="img/Обложка карточки-3.svg"></img>
                     <div class="playground-card__info">
                         <p class="playground-card__name">Викторина</p>
                         <p class="playground-card__description">Отвечай на вопросы викторины с вариантами ответов.</p>
                         <button class="playground-card__button">Играть!</button>
                     </div>
-                    <img class="playground-card__img" src="img/Обложка карточки-3.svg"></img>
                 </div>
                 <div id="color_generator" class="playground-card">
                     <img class="playground-card__img" src="img/Обложка карточки-5.svg"></img>
                     <div class="playground-card__info">
                         <p class="playground-card__name">Генератор случайных цветов</p>
-                        <p class="playground-card__description">Игра, в которой при клике на кнопку фон страницы меняется
+                        <p class="playground-card__description">Игра, в которой при клике на кнопку фон страницы
+                            меняется
                             на случайный.</p>
                         <button class="playground-card__button">Играть!</button>
                     </div>
@@ -134,6 +135,39 @@
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
     </footer>
+    <script>
+        function guessNumber() {
+            let x = Math.floor(Math.random() * 100) + 1
+            let n = Number(prompt("Загадано число от 1 до 100. Попробуй угадать:)"));
+            let f = true;
+
+            while (f) {
+                switch (true) {
+                    case isNaN(n):
+                        n = Number(prompt("Вы ввели не число"));
+                        break;
+                    case n > 100:
+                        n = Number(prompt("Mеньше. Ведь по условию число не больше 100"));
+                        break;
+                    case n < 1:
+                        n = Number(prompt("Больше. Ведь по условию число не меньше 1"));
+                        break;
+                    case n == x:
+                        if (confirm("Вы угадали! Ещё раз?")) {
+                            guessNumber();
+                        }
+                        f = false;
+                        break;
+                    case n > x:
+                        n = Number(prompt("Mеньше"));
+                        break;
+                    case n < x:
+                        n = Number(prompt("Больше"));
+                        break;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
