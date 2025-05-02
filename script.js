@@ -38,9 +38,6 @@ function simpleMath() {
     if ((y == 0) && (d == '/')) {
         y++;
     }
-    console.log(x);
-    console.log(y);
-    console.log(d);
     let ans = 0;
     switch (d) {
         case '+':
@@ -56,7 +53,6 @@ function simpleMath() {
             ans = x / y;
             break;
     }
-    console.log(ans);
     let n = Number(prompt(`Решите пример: ${x} ${d} ${y}`));
     if (Math.abs(n - ans) < 0.1) {
         alert("Правильно!");

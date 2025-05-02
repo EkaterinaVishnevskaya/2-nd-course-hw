@@ -147,7 +147,7 @@ html {
   text-decoration: none;
 }
 .card:hover {
-  width: 406px;
+  transform: scale(1.07);
 }
 .card__img {
   width: 100%;

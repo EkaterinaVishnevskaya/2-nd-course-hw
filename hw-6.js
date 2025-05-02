@@ -47,7 +47,7 @@ console.log(f);
 
 //7
 let g = [9, 8, 7, 6, 5];
-let n = prompt("Угадай число");
+let n = Number(prompt("Угадай число"));
 if (g.includes(n)) {
     alert('Угадал');
 } else {
