@@ -60,3 +60,38 @@ function simpleMath() {
         alert(`Неравильно! Ответ - ${ans}`);
     }
 }
+
+function backward() {
+    let s = prompt('Введите текст');
+    alert(s.split('').reverse().join(''));
+}
+
+function quiz() {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+    if (confirm('Добро пожаловать на квиз. Начнём?')) {
+        let ca = 0;
+        quiz.forEach((q) => {
+            let ans = Number(prompt(q.question + '\n' + q.options));
+            if (ans == q.correctAnswer) {
+                ca++;
+            }
+        })
+        alert(`Вы дали ${ca} правильных ответов`);
+    }
+}
