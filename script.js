@@ -95,3 +95,23 @@ function quiz() {
         alert(`Вы дали ${ca} правильных ответов`);
     }
 }
+
+function rps() {
+    const el = ["камень", "ножницы", "бумага", "камень", "ножницы"];
+    let comp = Math.floor(Math.random() * 3)+1;
+    let user = prompt("Камень, ножницы, бумага. 1, 2, 3...").toLowerCase();
+    let s = `Ваш выбор: ${user}, выбор компьютера: ${el[comp]}\n`
+    switch (true) {
+        case user==el[comp]: 
+            alert(s+'Это ничья!');
+            break; 
+        case user==el[comp+1]: 
+            alert(s+'Вы проиграли!');
+            break;
+        case user==el[comp-1]: 
+            alert(s+'Вы выиграли!');
+            break;
+        default:
+            alert(`${user} не является корректным выбором`);
+    }
+}
