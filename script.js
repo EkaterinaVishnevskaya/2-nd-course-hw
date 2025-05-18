@@ -115,3 +115,16 @@ function rps() {
             alert(`${user} не является корректным выбором`);
     }
 }
+
+function color_generator() {
+    var letters = '0123456789ABCDEF';
+    console.log(letters);
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    console.log(color);
+    const block = document.querySelector('.main');
+    console.log(block);
+    block.style.backgroundColor = color;
+}
