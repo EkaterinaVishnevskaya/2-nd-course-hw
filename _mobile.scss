@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
     .header {
         background-image: url(img/Vector.svg);
-        height: 700px;
+        height: 649px;
         background-position: top right;
         background-size: 220px;
 
@@ -41,11 +41,10 @@
             background-color: white;
             border: 1px solid black;
         }
+    }
 
-        &__animated-line {
-            top: 649px;
-            height: 51px;
-        }
+    .animated-line {
+        height: 51px;
     }
 
     #star1 {
@@ -80,6 +79,12 @@
 
     .playground-card {
         flex-direction: column;
+        width: 343px;
+
+        &__img {
+            width: 343px;
+            height: 285px;
+        }
 
         &__button {
             width: 285px;

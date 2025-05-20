@@ -81,21 +81,21 @@ html {
     }
 }
 
-animated-line {
-        animation: scroll-left 10s linear infinite;
-        background-image: url("img/Полоса для анимации.svg");
+.animated-line {
+        animation: scroll-line 10s linear infinite;
+        background-image: url('img/animated-line.svg');
         height: 90px;
         width: 100%;
         background-size: cover;
         background-repeat: repeat-x;
 
-        @keyframes scroll-left {
+        @keyframes scroll-line {
             from {
-                background-position-x: 0%;
+                background-position-x: -100%;
             }
 
             to {
-                background-position-x: -100%;
+                background-position-x: 0%;
             }
         }
     }
@@ -215,7 +215,6 @@ animated-line {
 }
 
 .playground {
-
     padding-top: 46px;
     padding-bottom: 144px;
 
@@ -244,6 +243,8 @@ animated-line {
     background-color: white;
 
     &__img {
+        height: 500px;
+        width: 600px;
         object-fit: cover;
         border-radius: 30px;
     }
